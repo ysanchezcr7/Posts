@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="3dp"
+        android:gravity="fill_horizontal"
+        android:minHeight="0dp"
+        android:theme="@style/AlertDialog.AppCompat"
+        app:title="Comments Posts"
+        app:titleTextColor="@color/cardview_light_background"
+        tools:ignore="NotSibling" />
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@id/toolbar">
+             <androidx.recyclerview.widget.RecyclerView
+
+                 android:id="@+id/rvPostsComent"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentStart="true"
+                 android:layout_alignParentTop="true"
+                 android:elevation="2dp">
+
+             </androidx.recyclerview.widget.RecyclerView>
+
+
+         </RelativeLayout>
+
+
+ </RelativeLayout>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:gravity="center">
+
+
+    <EditText
+
+        android:id="@+id/et_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:text=""
+        android:drawableLeft="@drawable/ic_actualizar_name"
+
+        android:textIsSelectable="false" />
+
+    <EditText
+        android:id="@+id/et_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:drawableLeft="@drawable/ic_actualizar_cell"
+        android:hint="Numero"
+        android:inputType="number"
+        android:text=""
+        android:textIsSelectable="false" />
+
+
+
+
+
+
+</LinearLayout>

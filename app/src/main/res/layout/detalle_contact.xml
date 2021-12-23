@@ -1,0 +1,114 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/relativDetalle">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:elevation="3dp"
+        android:gravity="fill_horizontal"
+        android:minHeight="0dp"
+        android:theme="@style/AlertDialog.AppCompat"
+        app:title="Contactos"
+        app:titleTextColor="@color/cardview_light_background"
+        tools:ignore="NotSibling" />
+
+         <RelativeLayout
+             android:id="@+id/relativDetalle"
+             android:layout_marginTop="4dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/toolbarDetalle">
+             <LinearLayout
+                 android:orientation="vertical"
+                 android:id="@+id/imgDetalle"
+                 android:gravity="center"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <de.hdodenhof.circleimageview.CircleImageView
+                     xmlns:app="http://schemas.android.com/apk/res-auto"
+                     android:layout_width="96dp"
+                     android:layout_height="96dp"
+                     android:src="@drawable/ic_launcher_background"
+                     android:id="@+id/imgContact"
+                     app:civ_border_width="1dp"
+                     app:civ_border_color="#0F000000"/>
+
+                 <TextView
+                     android:id="@+id/tvNombreDetalleContact"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_margin="10dp"
+
+                     android:padding="5dp"
+                     android:text="Nombre Contacto"
+                     android:textColor="@color/white"
+                     android:textSize="18dp"
+                     android:textStyle="bold">
+
+                 </TextView>
+
+
+
+             </LinearLayout>
+
+         </RelativeLayout>
+
+         <ScrollView
+             android:layout_below="@+id/relativDetalle"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="1dp"
+                 app:cardBackgroundColor="@color/cardDetalle">
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="7dp"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:textColor="@color/white"
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:layout_marginTop="10dp"
+                         android:padding="5dp"
+                         android:text="Móvil" />
+
+                     <TextView
+                         android:id="@+id/tvNumeroDetalleContact"
+                         android:layout_width="wrap_content"
+                         android:layout_height="match_parent"
+                         android:layout_marginTop="10dp"
+                         android:padding="5dp"
+                         android:text="Numero"
+                         android:textColor="@color/colorPrimary" />
+
+                     <View
+                         android:layout_marginBottom="2dp"
+                         android:layout_width="match_parent"
+                         android:layout_height="2dp"
+                         android:background="@color/view">
+
+                     </View>
+
+
+                 </LinearLayout>
+
+             </androidx.cardview.widget.CardView>
+         </ScrollView>
+
+
+ </RelativeLayout>
+

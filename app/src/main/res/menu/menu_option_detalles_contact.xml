@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_delet_contact"
+        android:orderInCategory="100"
+        android:title="Delet Contact"
+        android:icon="@drawable/ic_delet"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_update_contact"
+        android:orderInCategory="100"
+        android:title="Update Contact"
+        android:icon="@drawable/ic_pincel_edit"
+        app:showAsAction="always" />
+</menu>
